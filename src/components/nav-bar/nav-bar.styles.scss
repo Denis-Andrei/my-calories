@@ -1,0 +1,34 @@
+@import '../../assets/sass/main';
+
+.nav-bar{
+   
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, $color-gradient-green-darker, $color-gradient-green-lighter);
+
+    &__logo{
+        height: 5rem;
+    }
+
+    &__navigation{
+        font-size: $font-size-bigger;
+    }
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__link{
+        text-decoration: none;
+        margin-left: 4rem;
+        color: white;
+        transition: all .2s;
+        
+        &:hover{
+            color: $color-green-darker;
+        }
+    }
+}

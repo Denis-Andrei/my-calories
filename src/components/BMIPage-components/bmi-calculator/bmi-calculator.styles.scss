@@ -1,0 +1,55 @@
+@import '../../../assets/sass/main';
+
+.bmi-calculator{
+    margin: 5rem;
+    background-color: $color-green-lighter;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 5rem;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+
+        label{
+            color: $color-green-darker;
+            font-weight: 700;
+        }
+    }
+
+    &__item{
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label{
+            width: 15rem;
+        }
+       
+            
+            
+            
+        
+
+        &-female, &-male{
+            margin-right: 1rem;
+            width: max-content !important; 
+        }
+        
+
+        input[type='number']{
+            border: 2px solid $color-green-darker;
+            outline: none;
+            border-radius: 50px;
+            padding: 1rem;
+        }
+        
+    }
+
+    &__btn{
+        margin-top: 3rem;
+    }
+}

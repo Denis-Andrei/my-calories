@@ -1,0 +1,52 @@
+@import '../../../assets/sass/main';
+
+.jumbotron{
+    padding: 10rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, $color-gradient-green-darker, $color-gradient-green-lighter);
+    color: white;
+    position: relative;
+
+
+    &__text-container{
+        width: 60%;
+    }
+
+    &__heading{
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
+
+    &__text{
+        font-size: $font-size-bigger;
+    }
+
+    &__buttons{
+        margin: 4rem 0;
+
+        a{
+            margin-right: 2rem;
+        }
+    }
+
+    &__img-box{
+       width: 50%;
+       display: flex;
+       justify-content: center;
+    }
+
+    &__img{
+        max-width: 70%;
+        height: auto;
+    }
+
+    &__svg{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        
+    }
+}

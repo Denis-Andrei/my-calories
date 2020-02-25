@@ -1,0 +1,29 @@
+@import '../../../assets/sass/main';
+
+.features{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__list{
+
+    }
+
+    &__item{
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        width: 5rem;
+        margin-right: 2rem;
+    }
+
+    &__title{
+        font-size: $font-size-bigger;
+        color: $color-gray;
+    }
+}

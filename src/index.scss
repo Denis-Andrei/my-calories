@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap');
+@import './assets/sass/main';
+html{
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: 'Comfortaa';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $font-size-bigger;
+}
+
+

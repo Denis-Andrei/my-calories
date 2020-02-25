@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route, Switch} from 'react-router-dom';
 import './App.css';
+import HomePage from './pages/homepage/homepage.component';
+import NavBar from './components/nav-bar/nav-bar.component';
+import Footer from './components/footer/footer.component';
+import Newsletter from './components/newsletter/newsletter.component';
+import BMICalculatorPage from './pages/bmiPage/bmi-page.component';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar /> 
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/BMI-calculator' component={BMICalculatorPage} />
+      </Switch>
+      <Newsletter />
+      <Footer />
     </div>
   );
 }

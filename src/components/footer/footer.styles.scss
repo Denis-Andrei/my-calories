@@ -1,0 +1,20 @@
+@import '../../assets/sass/main';
+
+.footer{
+    padding: 3rem 5% .5rem 5%;
+    background-color: $color-footer;
+    text-align: center;
+    
+
+    &__social-icon{
+        width: 4rem;
+        margin: 1rem;
+    }
+
+    &__copyright{
+        color: white;
+        font-size: $font-size-default;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+}
