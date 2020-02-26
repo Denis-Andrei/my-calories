@@ -1,0 +1,49 @@
+@import '../../../assets/sass/main';
+
+.bmi-form{
+
+    &__heading{
+        color: $color-green;
+        text-align: center;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+        label{
+            color: $color-green-darker;
+            font-weight: 700;
+        }
+    }
+
+    &__item{
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label{
+            width: 15rem;
+        }
+       
+        &-female, &-male{
+            margin-right: 1rem;
+            width: max-content !important; 
+        }
+        
+
+        input[type='number']{
+            border: 2px solid $color-green-darker;
+            outline: none;
+            border-radius: 50px;
+            padding: 1rem;
+        }
+        
+    }
+
+    &__btn{
+        margin: 2rem auto;
+    }
+}

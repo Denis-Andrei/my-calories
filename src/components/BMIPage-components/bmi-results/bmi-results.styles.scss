@@ -1,0 +1,79 @@
+@import '../../../assets/sass/main';
+
+.bmi-results{
+    background-color: $color-green-darker;
+    padding: 2rem 5rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+
+    &__heading{
+        color: $color-green;
+    }
+
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    &__item{
+        color: $color-green;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        
+
+        span{
+            color: white;
+            width: 10rem;
+            margin-left: 1rem;
+            
+        }
+    }
+
+    &__result-boxes{
+        display: flex;
+    }
+
+    &__result-box{
+        border-radius: 20px;
+        width: 15rem;
+        background-color: $color-green-lighter;
+        margin: 1rem;
+        padding: 1rem;
+
+        &--inactive{
+            color: $color-danger;
+            border: 2px solid $color-danger;
+        }
+        &--lessactive{
+            color: $color-moderate;
+            border: 2px solid $color-moderate;
+        }
+        &--active{
+            color: $color-footer;
+            border: 2px solid $color-footer;
+        }
+        &--veryactive{
+            color: $color-green;
+            border: 2px solid $color-green;
+        }
+        
+    }
+
+    &__calories-number{
+        margin-bottom: 0;
+    }
+
+    &__text{
+        margin-top: 0;
+        color: $color-gray;
+    }
+
+    &__activity{   
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+
+}

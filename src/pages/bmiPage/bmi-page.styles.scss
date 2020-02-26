@@ -1,0 +1,34 @@
+@import '../../assets/sass/main';
+
+
+.bmi-page{
+    
+
+    &-info{
+        padding: 2rem 5%;
+
+
+        &__heading{
+            color: $color-green-darker;
+            margin-top: 10rem;
+        }
+
+        &__text{
+            color: $color-gray;
+        }
+
+        &__tables{
+            margin: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        &__formula{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: $color-green-darker;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../../assets/sass/main';
+
+.bmi-table{
+
+    &__table{
+        border: 2px solid $color-green-darker;
+        border-radius: 20px;
+        border-collapse: separate;
+        border-spacing: 0px;
+        text-align: center;
+        color: $color-gray;
+        background-color: $color-green-lighter;
+
+        td,th{
+            border-left: 2px solid $color-green-darker;
+            border-top: 2px solid $color-green-darker;
+        }
+        th {
+            border-top: none;
+            color: $color-green-darker;
+            font-weight: 700;
+        }
+        
+        td:first-child, th:first-child {
+             border-left: none;
+        }
+        th,td{
+            padding: 2rem 5rem;
+        }
+
+        
+    }
+
+    &__caption{
+        color: $color-green-darker;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    
+}
